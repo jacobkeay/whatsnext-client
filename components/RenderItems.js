@@ -35,7 +35,7 @@ const RenderItems = () => {
 
   useEffect(() => {
     if (!cookie.get("token")) {
-      Router.push("/login");
+      Router.push("/signup");
     }
     fetchItems();
   }, []);
